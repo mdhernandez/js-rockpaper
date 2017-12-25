@@ -8,10 +8,42 @@ function game(){
 	//console.log(pChoice);
 	let cChoice = "The computer chose " + c;
 	//console.log(cChoice);
+	
+	
 	$(document).ready(function(){
 	  $("#playdiv").text(pChoice);
+	  
       $("#compdiv").text(cChoice);
-      $("#result").text(res);	  
+      $("#result").text(res);
+	  switch(p){
+		  case "Rock":
+		    $("#visual").prepend("<div><img src = \"images/rock.jpg\" id = \"play-pic\" ></div>");	
+		    break;
+		  case "Scissors":
+		    $("#visual").prepend("<div><img src = \"images/scissors.jpg\" ></div>");	
+		    break;
+		  case "Paper":
+		    $("#visual").prepend("<div><img src = \"images/paper.jpg\" id = \"comp-pic\" align = \"right\"></div>");	
+		    break;
+	  }
+      
+	  $("#visual").append("<h1>Versus</h1>");
+	  
+	  switch(c){
+		  case "Rock":
+		    $("#visual").append("<img src = \"images/rock.jpg\">")
+		    break;
+		  case "Scissors":
+		    $("#visual").append("<img src = \"images/scissors.jpg\">")
+		    break;
+		  case "Paper":
+		    $("#visual").append("<img src = \"images/paper.jpg\">")
+		    break;
+	  }
+	  
+	  $("#again").click(function(){
+		 location.reload(); 
+	  });
 	});
 	
 	
