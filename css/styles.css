@@ -22,3 +22,7 @@ img{
 	color: blue;
 	text-align: center;;
 }
+
+#choices img{
+	cursor: pointer;
+}
