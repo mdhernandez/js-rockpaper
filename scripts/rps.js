@@ -5,6 +5,7 @@ function game(){
 	  $("#choices img").click(function(){
 		  
 		  let choose = $(this).attr("src").toLowerCase();
+		 
 		  let p = playerTranslate(choose)
 		  let c = computerPlay();
 		  
@@ -22,7 +23,7 @@ function game(){
 		    $("#play").html("<div><img src = \"images/rock.jpg\" id = \"play-pic\" ></div>");	
 		    break;
 		  case "Scissors":
-		    $("#play").html("<div><img src = \"images/scissors.jpg\" ></div>");	
+		    $("#play").html("<div><img src = \"images/Scissors.jpg\" ></div>");	
 		    break;
 		  case "Paper":
 		    $("#play").html("<div><img src = \"images/paper.jpg\" id = \"comp-pic\" align = \"right\"></div>");	
@@ -36,7 +37,7 @@ function game(){
 		    $("#comp").html("<img src = \"images/rock.jpg\">")
 		    break;
 		  case "Scissors":
-		    $("#comp").html("<img src = \"images/scissors.jpg\">")
+		    $("#comp").html("<img src = \"images/Scissors.jpg\">")
 		    break;
 		  case "Paper":
 		    $("#comp").html("<img src = \"images/paper.jpg\">")
