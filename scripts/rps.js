@@ -4,7 +4,7 @@ function game(){
 	    
 	  $("#choices img").click(function(){
 		  
-		  let choose = $(this).attr("src");
+		  let choose = $(this).attr("src").toLowerCase();
 		  let p = playerTranslate(choose)
 		  let c = computerPlay();
 		  
